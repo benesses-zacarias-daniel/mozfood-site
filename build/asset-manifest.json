@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.109d2e28.css",
+    "main.js": "/static/js/main.1048d301.js",
+    "static/media/img.png": "/static/media/img.84bb68b2d931ea1d9517.png",
+    "index.html": "/index.html",
+    "static/media/speed.svg": "/static/media/speed.e3d6e610f80d1bb6145cb1fb2d2d78b0.svg",
+    "static/media/del.svg": "/static/media/del.9884c108ccda4024f4c5d40b54f99b94.svg",
+    "static/media/lanche.svg": "/static/media/lanche.827be48c162f7e1bf53bedc902ca1adb.svg",
+    "static/media/fresco.svg": "/static/media/fresco.f94efe919dc4d7bfc1af5c09da4abce3.svg",
+    "static/media/carrinho.svg": "/static/media/carrinho.5c2b3687d896b13a546421f193a79857.svg",
+    "static/media/whatsApp.svg": "/static/media/whatsApp.1988ee9df4bb6f76a7da4eb240c64298.svg",
+    "static/media/cht.svg": "/static/media/cht.f077b128d172a8036ed06f2528feecf3.svg",
+    "static/media/eat.svg": "/static/media/eat.354015eab65064eb0b2e807835996d2b.svg",
+    "static/media/comer.svg": "/static/media/comer.4d9cc399ade3bc10960beec887ec96fe.svg",
+    "static/media/seta.svg": "/static/media/seta.9e5cd2a6c8e2e75f8b239a35d9db0509.svg",
+    "main.109d2e28.css.map": "/static/css/main.109d2e28.css.map",
+    "main.1048d301.js.map": "/static/js/main.1048d301.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.109d2e28.css",
+    "static/js/main.1048d301.js"
+  ]
+}
