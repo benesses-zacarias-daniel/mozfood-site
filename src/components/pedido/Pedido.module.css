@@ -8,14 +8,14 @@
 }
 
 .area_pedido_home {
-    height: 150px;
+    height: 170px;
     border-color: #b6a9a9;
     background: #e6dfdf;
     padding: 5px;
 }
 
 .area_pedido_menu {
-    height: 180px;
+    height: 170px;
     background: #ff6900;
     border-color: #ff6900;
     padding: 10px;
@@ -60,13 +60,3 @@
     flex-direction: row;
     text-decoration: none;
 }
-
-@media only screen and (min-width:400px) {
-    .area_pedido_menu {
-        height: 150px;
-    }
-}
-
-@media only screen and (min-width:899px) {}
-
-@media only screen and (min-width:1100px) {}
