@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Hero from "../heros/Hero";
+import Hero from "../hero/Hero";
 import Img from "../img/Img";
 import style from "./SobreNos.module.css";
 import Fundo from "../assets/img.png";

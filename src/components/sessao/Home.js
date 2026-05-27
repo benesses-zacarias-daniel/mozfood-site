@@ -1,6 +1,6 @@
 import Pedido from "../pedido/Pedido";
 import Favoritos from "../favoritos/Favoritos";
-import Hero from "../heros/Hero";
+import Hero from "../hero/Hero";
 // import HeroHome from "../heros/HeroHome";
 import Passos from "../pratos/Passos";
 import style from "./Home.module.css";

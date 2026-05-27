@@ -125,7 +125,7 @@
 }
 
 .img_hero {
-    width: 80%;
+    max-width: 290px;
     max-height: 280px;
 }
 

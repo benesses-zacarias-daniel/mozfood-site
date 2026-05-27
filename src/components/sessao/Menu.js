@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../buttons/Button";
-import Hero from "../heros/Hero";
+import Hero from "../hero/Hero";
 import style from "./Menu.module.css";
 import Pedido from "../pedido/Pedido";
 import Pratos from "../pratos/Pratos";
