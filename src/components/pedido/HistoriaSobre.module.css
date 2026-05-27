@@ -18,6 +18,10 @@
     flex-direction: column;
 }
 
+.historia h2 {
+    width: 100%;
+}
+
 .historia p {
     text-align: justify;
     line-height: 23px;
