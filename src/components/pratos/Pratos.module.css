@@ -31,14 +31,13 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
-    object-fit: cover;
 }
 
 .area_img_prato .img_prato {
     width: 98.3%;
-    height: 310px;
-    border-radius: 15px;
-    object-fit: cover;
+    height: 305px;
+    border-radius: 15px !important;
+    /* object-fit: none; */
 }
 
 .info_prato {
@@ -52,7 +51,7 @@
 }
 
 .desc_prato {
-    padding: 5px 0px 0px 0px;
+    padding: 0px 2px 0px 0px;
 }
 
 .preco_prato {

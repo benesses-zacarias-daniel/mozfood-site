@@ -14,7 +14,7 @@ import PratosDados from "../data/Pratos";
 
 const Menu = () => {
     const [mostrarTodosPratos, setMostrarTodosPratos] = useState(false);
-    const PratosMenu = PratosDados.filter((prato) => prato.id !== 0 && prato.id !== 6 && prato.id !== 8)
+    const PratosMenu = PratosDados.filter((prato) => prato.id !== 1 && prato.id !== 7 && prato.id !== 9)
 
     const onClick = (evt) => {
         if (mostrarTodosPratos) {
