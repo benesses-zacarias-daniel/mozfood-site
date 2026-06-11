@@ -70,6 +70,23 @@
     font-weight: 700;
 }
 
+.prato_destacar {
+    position: absolute;
+    color: #ff6900;
+    top: 15px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.838);
+    padding: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 /* @media only screen and (min-width:399px) {
     .area_geral_prato {

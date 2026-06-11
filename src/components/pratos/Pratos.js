@@ -1,7 +1,7 @@
 import Img from "../img/Img";
 import style from "./Pratos.module.css";
 
-const Pratos = ({ src, alt, preco, prato, desc }) => {
+const Pratos = ({ src, alt, preco, texto, prato, desc }) => {
     return (
         <div className={style.area_geral_prato}>
             <div className={style.area_img_prato}>
@@ -11,6 +11,12 @@ const Pratos = ({ src, alt, preco, prato, desc }) => {
                         {preco} MT
                     </span>
                 </div>
+                {texto && (
+                    <div className={style.prato_destacar}>
+                        <span>
+                            {texto}
+                        </span>
+                    </div>)}
             </div>
             <div className={style.info_prato}>
                 <div className={style.titulo_prato}>

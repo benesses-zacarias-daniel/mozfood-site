@@ -30,9 +30,9 @@ const Favoritos = () => {
 
             </div>
             <div className={style.area_fav_pratos}>
-                <Pratos src={PratosDados[6].srcPrato} alt={PratosDados[6].alt} desc={PratosDados[6].desc} preco={PratosDados[6].preco} prato={PratosDados[6].nomePrato} />
-                <Pratos src={PratosDados[0].srcPrato} alt={PratosDados[0].alt} desc={PratosDados[0].desc} preco={PratosDados[0].preco} prato={PratosDados[0].nomePrato} />
-                <Pratos src={PratosDados[8].srcPrato} alt={PratosDados[8].alt} desc={PratosDados[8].desc} preco={PratosDados[8].preco} prato={PratosDados[8].nomePrato} />
+                <Pratos src={PratosDados[6].srcPrato} key={PratosDados[6].id} texto={PratosDados[6].texto} alt={PratosDados[6].alt} desc={PratosDados[6].desc} preco={PratosDados[6].preco} prato={PratosDados[6].nomePrato} />
+                <Pratos src={PratosDados[0].srcPrato} key={PratosDados[0].id} texto={PratosDados[0].texto} alt={PratosDados[0].alt} desc={PratosDados[0].desc} preco={PratosDados[0].preco} prato={PratosDados[0].nomePrato} />
+                <Pratos src={PratosDados[8].srcPrato} key={PratosDados[8].id} texto={PratosDados[8].texto} alt={PratosDados[8].alt} desc={PratosDados[8].desc} preco={PratosDados[8].preco} prato={PratosDados[8].nomePrato} />
             </div>
         </div>
     )
