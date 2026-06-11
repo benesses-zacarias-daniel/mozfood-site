@@ -23,6 +23,7 @@
 }
 
 .area_img_prato {
+    padding: 2px 0px 0px 0px;
     flex: 1;
     width: 100%;
     display: flex;
@@ -34,7 +35,7 @@
 
 .area_img_prato .img_prato {
     width: 98.3%;
-    height: 318px;
+    height: 310px;
     border-radius: 15px;
 }
 

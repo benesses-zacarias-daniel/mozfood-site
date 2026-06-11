@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import Pratos from "../pratos/Pratos";
 import style from "./Favoritos.module.css"
-import Food from "../assets/img.png";
 import Seta from "../assets/seta.svg";
 import Button from "../buttons/Button";
 import { usePagina } from "../context/Context";
 import Img from "../img/Img";
+import PratosDados from "../data/Pratos";
 
 const Favoritos = () => {
     const { mudarPagina } = usePagina();
@@ -30,13 +30,9 @@ const Favoritos = () => {
 
             </div>
             <div className={style.area_fav_pratos}>
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                <Pratos src={PratosDados[6].srcPrato} alt={PratosDados[6].alt} desc={PratosDados[6].desc} preco={PratosDados[6].preco} prato={PratosDados[6].nomePrato} />
+                <Pratos src={PratosDados[0].srcPrato} alt={PratosDados[0].alt} desc={PratosDados[0].desc} preco={PratosDados[0].preco} prato={PratosDados[0].nomePrato} />
+                <Pratos src={PratosDados[8].srcPrato} alt={PratosDados[8].alt} desc={PratosDados[8].desc} preco={PratosDados[8].preco} prato={PratosDados[8].nomePrato} />
             </div>
         </div>
     )

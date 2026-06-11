@@ -7,13 +7,14 @@ import Pratos from "../pratos/Pratos";
 import Passos from "../pratos/Passos";
 import ImgHero from "../assets/img.png";
 import Mensagem from "../assets/cht.svg";
-import food from "../assets/img.png";
 import colherGarfo from "../assets//comer.svg";
 import carrinho from "../assets/carrinho.svg";
 import eat from "../assets/eat.svg";
+import PratosDados from "../data/Pratos";
 
 const Menu = () => {
     const [mostrarTodosPratos, setMostrarTodosPratos] = useState(false);
+    const PratosMenu = PratosDados.filter((prato) => prato.id !== 0 && prato.id !== 6 && prato.id !== 8)
 
     const onClick = (evt) => {
         if (mostrarTodosPratos) {
@@ -43,29 +44,14 @@ const Menu = () => {
                     </div>
                 </div>
                 <div className={style.pratos_d_menu}>
-                    <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                    <Pratos src={food} alt={"Prato de "} desc={"Mathápa de couvé"} preco={250} prato={"Mathápa"} />
-                    <Pratos src={food} alt={"Prato de "} desc={"Sushi fresco"} preco={250} prato={"Sushimi"} />
-
+                    <Pratos src={PratosDados[6].srcPrato} alt={PratosDados[6].alt} desc={PratosDados[6].desc} preco={PratosDados[6].preco} prato={PratosDados[6].nomePrato} />
+                    <Pratos src={PratosDados[0].srcPrato} alt={PratosDados[0].alt} desc={PratosDados[0].desc} preco={PratosDados[0].preco} prato={PratosDados[0].nomePrato} />
+                    <Pratos src={PratosDados[8].srcPrato} alt={PratosDados[8].alt} desc={PratosDados[8].desc} preco={PratosDados[8].preco} prato={PratosDados[8].nomePrato} />
                     {
                         mostrarTodosPratos && (
-                            <>
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                            </>
+                            PratosMenu.map((prato) => {
+                                return <Pratos src={prato.srcPrato} alt={prato.alt} desc={prato.desc} preco={prato.preco} prato={prato.nomePrato} />;
+                            })
                         )
                     }
                 </div>
