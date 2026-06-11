@@ -8,29 +8,31 @@
 }
 
 .area_pedido_home {
-    height: 170px;
+    /* height: 170px; */
     border-color: #b6a9a9;
     background: #e6dfdf;
     padding: 5px;
+    gap: 10px;
 }
 
 .area_pedido_menu {
-    height: 170px;
+    /* height: 170px; */
     background: #ff6900;
     border-color: #ff6900;
     padding: 10px;
+    gap: 10px;
     color: #fff;
 }
 
 .titulo_pedido {
     width: 100%;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
 }
 
 .desc_pedido {
     text-align: center;
-    padding: 0px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 .area_btn_pedido {
@@ -40,7 +42,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    /* padding: 5px; */
+    padding: 5px;
 }
 
 .img_pedido {
