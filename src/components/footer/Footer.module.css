@@ -4,7 +4,7 @@ footer {
     background: #222;
     text-align: justify;
     color: white;
-    padding: 10px;
+    padding: 10px 5px 10px 5px;
     text-align: center;
     flex-shrink: 0;
     /* bottom: -0px; */
@@ -32,7 +32,7 @@ footer {
 
 .nome_min_desc {
     height: 100%;
-    width: 260px;
+    width: auto;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -42,7 +42,7 @@ footer {
 
 .nome_min_desc p {
     text-align: start;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 5px 0px 0px;
 }
 
 .nav_titulo {
@@ -87,15 +87,4 @@ hr {
     background: #e0e0e0;
     margin: 12px 0px 12px 0px;
     width: 95%;
-}
-
-/*Media Querys*/
-@media only screen and (min-width:400px) {
-    .nome_min_desc {
-        margin-right: 100px;
-    }
-
-    .area_atalho_nav {
-        margin-left: 100px;
-    }
 }
