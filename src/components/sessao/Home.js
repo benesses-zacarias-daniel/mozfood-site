@@ -11,12 +11,33 @@ import carrinho from "../assets/carrinho.svg";
 import entrega from "../assets/del.svg";
 
 const Home = () => {
+    const PassosEntregas = [
+        {
+            "id": 1,
+            "passo": "Escolha",
+            "desc": "Explore o nosso menu variado e monte o seu pedido perfeito.",
+            "alt": "Ícone de colher e garfo cruzados",
+            "src": colherGarfo
+        }, {
+            "id": 2,
+            "passo": "Peça",
+            "desc": "Conclua o seu pedido e confirme os detalhes da entrega.",
+            "alt": "Ícone de carrinho de super mercado",
+            "src": carrinho
+        }, {
+            "id": 3,
+            "passo": "Receba",
+            "desc": "Relaxe e espere. Entregamos a sua comida fresca e quente à sua porta.",
+            "alt": "Ícone de carro de entrega",
+            "src": entrega
+        }];
+
     return (
         <div className={style.home}>
             {/* <HeroHome /> */}
             <Hero alt={"Imagem da sessão de hero da home"} src={ImgHero} mostrarExplorar={true} imagemFundo={false} mens={"Experimente a essência de Moçambique no conforto da sua casa. Entrega rápida, comida quente e os melhores e os melhores restaurantes da cidade."} titulo={"Sabor à sua"} tituloFoco={" Porta."} />
             <Favoritos />
-            <Passos titulo={"O seu prato em 3 passos"} minInfo={""} passos={["Escolha", "Peça", "Receba"]} srcs={[colherGarfo, carrinho, entrega]} alts={["Ícone de colher e garfo cruzados", "Ícone de carrinho de super mercado", "Ícone de carro de entrega"]} descs={["Descricao de cada passo aqui sim aqui apareceram as o passo 1", "Descricao de cada passo aqui sim aqui apareceram o passo 2", "Descricao de cada passo aqui sim aqui apareceram as o passo 3."]} />
+            <Passos titulo={"O seu prato em 3 passos"} minInfo={""} dados={PassosEntregas} />
             <Pedido titulo_pedido={"Fome de comida de verdade ?"} alt={"Ícone de smartphone"} src={Phone} desc_pedido={" Peça agora pelos nossos canais exclusivos e receba descontos especias na sua primeira entrega."} texto={"Pedir via WhatsApp"} tipo={1} estiloBtn={style.btn_fome_pedido} />
         </div>
     );

@@ -15,6 +15,26 @@ import PratosDados from "../data/Pratos";
 const Menu = () => {
     const [mostrarTodosPratos, setMostrarTodosPratos] = useState(false);
     const PratosMenu = PratosDados.filter((prato) => prato.id !== 1 && prato.id !== 7 && prato.id !== 9)
+    const PassosMenu = [
+        {
+            "id": 1,
+            "passo": "I. Escolha",
+            "desc": "Escolha centenas de pratos e restaurantes selecionados.",
+            "alt": "Ícone de colher e garfo cruzados",
+            "src": colherGarfo
+        }, {
+            "id": 2,
+            "passo": "II. Peça",
+            "desc": "Confirme o seu pedido e escolha o método de pagamento.",
+            "alt": "Ícone de carrinho de super mercado",
+            "src": carrinho
+        }, {
+            "id": 3,
+            "passo": "II. Saboreie",
+            "desc": "Receba a sua comida quente e fresca em tempo recorde.",
+            "alt": "Ícone de carro de entrega",
+            "src": eat
+        }];
 
     const onClick = (evt) => {
         if (mostrarTodosPratos) {
@@ -55,7 +75,7 @@ const Menu = () => {
                         )
                     }
                 </div>
-                <Passos titulo={"Como Funciona o MozFood"} minInfo={"A sua refeição favorita em apenas 3 passos simples."} srcs={[colherGarfo, carrinho, eat]} descs={["Escolha centenas de pratos e restaurantes selecionados.", "Confirme o seu pedido e escolha o método de pagamento.", "Receba a sua comida quente e fresca em tempo recorde."]} alts={["Ícone de colher e garfo cruzados", "Ícone de carrinho de super mercado", "Ícone de carro de entrega"]} passos={["1. Escolha", "2. Peça", "3. Saboreie"]} />
+                <Passos titulo={"Como Funciona o MozFood"} minInfo={"A sua refeição favorita em apenas 3 passos simples."} dados={PassosMenu} />
                 <Pedido tipo={2} alt={"Ícone de mensagem"} titulo_pedido={"Pronto pra comer ?"} desc_pedido={"Peçca agora pelos nossos canais exclusivos no WhatsApp e receba descontos especias na sua primeira compra."} src={Mensagem} texto={"Pedir pelo WhatsApp"} estiloBtn={style.btn_comer} />
             </div>
         </div>

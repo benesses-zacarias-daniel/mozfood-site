@@ -13,6 +13,26 @@ import HistoriaSobre from "../pedido/HistoriaSobre";
 
 const SobreNos = () => {
     const { mudarPagina } = usePagina();
+    const Valores = [
+        {
+            "id": 1,
+            "passo": "Ingredientes Frescos",
+            "desc": "Parcerias directas com produtores locais garantem que o sabor cheguee vibrante ao seu prato.",
+            "alt": "Ícone de folha de árvore",
+            "src": Fresco
+        }, {
+            "id": 2,
+            "passo": "Entrega Rápida",
+            "desc": "Logística inteligente e rastreamento em tempo real para que sua comida chegue sempre quente.",
+            "alt": "Ícone de energia",
+            "src": Speed
+        }, {
+            "id": 3,
+            "passo": "Sabor Autêntico",
+            "desc": "Receitas que respeitam as tradições, preparadas por quem realmente entende da nossa terra.",
+            "alt": "Ícone de Hamburger",
+            "src": Lanche
+        }];
 
     const onClick = () => {
         mudarPagina("menu");
@@ -22,7 +42,7 @@ const SobreNos = () => {
         <div className={style.sobre}>
             <Hero mens={"Elevamos a herança culinária de Moçambique com a convivência da tecnologia moderna, entregando autenticidade à sua porta."} alt={"Imagem de fundo bla!"} src={Fundo} titulo={"Saber que Une Gerações"} imgFundo={true} mostrarExplorar={false} />
             <HistoriaSobre />
-            <Passos alts={["Ícone de folha de árvore", "Ícone de energia", "Ícone de colher e garfo"]} descs={["Parcerias directas com produtores locais garantem que o sabor cheguee vibrante ao seu prato.", "Logística inteligente e rastreamento em tempo real para que sua comida chegue sempre quente.", "Receitas que respeitam as tradições, preparadas por quem realmente entende da nossa terra."]} minInfo={"Nossos pilares fundamentais garantem que cada pedido seja uma experiencia de excelência"} passos={["Ingredientes Frescos", "Entrega Rápida", "Sabor Autêntico"]} srcs={[Fresco, Speed, Lanche]} titulo={"O Que Nos Define"} />
+            <Passos titulo={"O Que Nos Define"} minInfo={"Nossos pilares fundamentais garantem que cada pedido seja uma experiencia de excelência"} dados={Valores} />
             <div className={style.area_acao_sobre}>
                 <div className={style.sobre_img_desc}>
                     <Img alt={"Imagem de fundo bla!"} estilo={style.img_fundo} src={Fundo} />
